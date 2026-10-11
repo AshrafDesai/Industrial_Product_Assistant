@@ -4,6 +4,8 @@
 
 Transform industrial product datasheets, catalogues, and technical manuals into a searchable knowledge base. Ask questions in natural language and retrieve document-grounded answers through a lightweight web interface.
 
+https://github.com/user-attachments/assets/73905332-1b73-49b1-8bcc-311713ab6255
+
 <p align="center">
 
 **FastAPI · Python · Ollama · ChromaDB · OpenRouter**
