@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Industrial Product Assistant</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="brand-mark">IP</div>
+    <h1>Industrial Product<br>Assistant</h1>
+    <p class="muted">Search manuals, datasheets and product information.</p>
+    <div class="upload-card">
+      <h2>Knowledge base</h2>
+      <p class="muted small">Upload a product PDF to make it searchable.</p>
+      <label class="file-label" for="pdf-file">Choose PDF</label>
+      <input id="pdf-file" type="file" accept="application/pdf,.pdf">
+      <button id="upload-button" class="secondary-button">Upload & index</button>
+      <p id="upload-status" class="status small" aria-live="polite"></p>
+    </div>
+    <label class="toggle-row"><input id="web-toggle" type="checkbox"><span>Include Tavily web search</span></label>
+    <p id="health-status" class="muted small">Checking service status…</p>
+    <div class="sidebar-footer">Prototype · Verify critical specifications against official manuals.</div>
+  </aside>
+  <main class="main-panel">
+    <header class="topbar">
+      <div><p class="eyebrow">PRODUCT KNOWLEDGE</p><h2>How can I help you today?</h2></div>
+      <span class="status-pill"><span class="dot"></span> Assistant</span>
+    </header>
+    <section id="welcome" class="welcome">
+      <div class="welcome-icon">⌕</div>
+      <h3>Ask about industrial products</h3>
+      <p>Find specifications, understand manuals, or compare product models using your indexed documents.</p>
+      <div class="suggestions">
+        <button class="suggestion">What specifications are available in my documents?</button>
+        <button class="suggestion">Summarize the motor maintenance instructions</button>
+        <button class="suggestion">Compare the voltage and speed ratings in my datasheets</button>
+      </div>
+    </section>
+    <section id="messages" class="messages" aria-live="polite"></section>
+    <form id="chat-form" class="composer">
+      <textarea id="message-input" rows="1" maxlength="1500" placeholder="Ask about a model, specification, or manual…" required></textarea>
+      <button id="send-button" type="submit" aria-label="Send message">↑</button>
+      <div class="composer-hint">Answers are generated from retrieved evidence. Verify safety-critical information.</div>
+    </form>
+  </main>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>
