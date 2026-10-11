@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Industrial Product Intelligence Assistant
 
 A starter RAG chatbot for industrial product datasheets and manuals. It uses FastAPI, a browser UI (HTML/CSS/vanilla JavaScript), ChromaDB, Sentence Transformers, Ollama, and optional Tavily web search. No Streamlit.
@@ -44,3 +45,6 @@ Open http://127.0.0.1:8000. On first startup, the embedding model downloads auto
 
 ## Limitations
 This is a learning MVP, not a production industrial decision system. Scanned PDFs need OCR and complex tables may not extract perfectly. Verify critical specifications against original manufacturer documentation. Before production, add authentication, role-based access, document versioning/deletion, malware scanning, audit logs, rate limits, robust table extraction, retrieval evaluation, and trusted-domain controls.
+=======
+# Industrial_Product_Assistant
+>>>>>>> a73569a69b3145ee766f4b896c59c41e44831005
